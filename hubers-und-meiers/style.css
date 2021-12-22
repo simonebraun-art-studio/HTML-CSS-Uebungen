@@ -7,4 +7,47 @@ div {
   min-width: 100px;
   border: 1px solid black;
   margin: 5px;
+  background: yellow
+}
+
+.huber{
+  text-align: center;
+
+}
+#susi{
+  text-align: left;
+}
+.meier{
+  text-align: right;
+}
+#susi.meier{
+  text-align: center;
+}
+
+div#susi.meier{
+  text-align: right;
+}
+div div #susi.meier{
+  text-align: left;
+}
+.huber div#susi.meier{
+  text-align: center;
+}
+#luis{
+  background: green
+}
+#luis.huber{
+  background: red
+}
+.meier #luis.huber{
+  background:black
+}
+#georg{
+  background:blue
+}
+div#georg {
+  background: white;
+}
+div.huber #georg{
+  background: brown;
 }

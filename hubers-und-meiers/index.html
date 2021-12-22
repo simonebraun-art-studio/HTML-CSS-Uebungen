@@ -5,17 +5,24 @@
     <title>Spezifität CSS</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      div.huber #georg{
+        background: aqua !important;
+      }
+      
+    </style>
   </head>
   <body>
     <div class="huber">
       <div id="lisa">Lisa</div>
-      <div id="georg">Georg</div>
-      <div id="susi">Susi</div>
+      <div id="georg"style="background: purple">Georg</div>
+      <div id="susi"class="meier">Susi</div>
     </div>
 
     <div class="meier">
       <div id="sepp">Sepp</div>
-      <div id="luis">Luis</div>
+      <div id="luis"class="huber">Luis</div>
       <div id="brigitte">Brigitte</div>
     </div>
   </body>

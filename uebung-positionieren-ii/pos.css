@@ -31,25 +31,49 @@ section {
 .container {
   width: 100%;
   height: 600px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background: rgba(255, 0, 0, 0.3);
+
 }
 
 .element {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
 }
 
 .electric-purple {
   background: #c200fb;
+  position: absolute;
+  right:100px;
+  top:100px;
+  z-index: 1;
 }
 
 .raspberry {
   background: #ec0868;
+position:  fixed;
+right:0; 
+top: 0;
+z-index: 2;
+
 }
 
 .ferrari-red {
   background: #fc2f00;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+  z-index:2;
 }
 
 .black {
   background: #000;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  position: fixed;
+
 }

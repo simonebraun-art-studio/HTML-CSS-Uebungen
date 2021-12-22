@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Geomanist Bold';
-  src: url('fonts/geomanist-bold.woff2') format('woff2'),
-    url('fonts/geomanist-bold.woff') format('woff');
+  font-family: "Geomanist Bold";
+  src: url("fonts/geomanist-bold.woff2") format("woff2"),
+    url("fonts/geomanist-bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 :root {
-  font-family: 'Geomanist Bold', sans-serif;
+  font-family: "Geomanist Bold", sans-serif;
 }
 
 /* Box sizing rules */
@@ -27,7 +27,7 @@ figcaption {
 
 h1,
 h2 {
-  font-family: 'Geomanist Bold';
+  font-family: "Geomanist Bold";
   font-weight: 900;
   text-transform: uppercase;
   font-size: 10rem;
@@ -37,6 +37,14 @@ figcaption {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 5rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  left:-300px;
+  transition: all 0.5s ease;
+}
+.box:hover figcaption{
+  left: 0;
 }
 
 /* Set core body defaults */
@@ -49,9 +57,12 @@ body {
 
 /* Make images easier to work with */
 img {
-  width: 100%;
+  width: 400px;
   height: auto;
   display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -68,6 +79,9 @@ img {
   min-height: 400px;
   max-width: 100%;
   margin: auto;
+  position: relative;
+  top: 160px;
+
 }
 
 .pink {
@@ -108,4 +122,13 @@ img {
 
 figure {
   max-width: 400px;
+
 }
+.heading{
+  position: fixed;
+  z-index: 9999;
+  background-color: #ffff;
+  width: 100%;
+
+}
+ 
